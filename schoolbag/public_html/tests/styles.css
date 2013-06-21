@@ -1,0 +1,58 @@
+body {  
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: normal; 
+  color: #000000;
+  margin: 10;
+  padding: 0;
+  background: #ffffff;
+}
+
+td, th {
+  font-size: 11px;
+  vertical-align: top; 
+}
+
+a {
+  color: #000000;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:hover {
+  color: #000000;
+}
+
+.listContentLayout {
+  border-collapse: collapse;
+  border: 1px solid #bbbbbb;
+}
+
+.listContentArea th,
+.listContentArea td {
+   padding: 3px;
+}
+
+.listContentArea th {
+  background: #BCCBE7;
+  text-align: left;
+  color: #000000;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.listContentArea td {
+   border-bottom: 1px solid #e0e0e0;
+   border-top: 1px solid #e0e0e0;
+
+}
+
+.evenrow {
+  background: #F3F3F3;
+}
+
+.oddrow {
+  background: #FFFFFF;
+}

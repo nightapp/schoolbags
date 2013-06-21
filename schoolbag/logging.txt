@@ -1,0 +1,9 @@
+C:\wamp\tmp\php93A9.tmp
+SubFolder
+POST : information/1/S/
+information/1/S/
+information/1/S/
+information/1/S/map.jpg
+1
+information/1/S/map.jpg
+1

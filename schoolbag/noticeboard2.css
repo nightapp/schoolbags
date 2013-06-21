@@ -1,0 +1,13 @@
+#miniNoticeboard{
+	width:95px;
+	margin-left:400px;
+	left:50%;
+	position:absolute;
+}
+#miniNoticeboard .noticeLeft{
+display:none;
+}
+#miniNoticeboard .noticeRight{
+width:95px;
+overflow:visible;
+}

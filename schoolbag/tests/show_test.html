@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Parallels&reg; Automation - Feature test page</title>
+<script language="javascript">
+var map = new Array();
+//basic features
+map["?asp"] = "asp_test.asp";
+map["?aspnet"] = "aspnet_test.aspx";
+map["?cf"] = "coldfusion_test.cfm";
+map["?php"] = "php_test.php";
+map["?ssi"] = "ssi_test.shtml";
+map["?active_perl"] = "perl_test.pl";
+
+//ISAPI extensions
+map["?isapi_rewrite"] = "isapi_rewrite_test.redirect";
+
+var loc = map[document.location.search];
+
+if(loc)
+{
+	i = loc.lastIndexOf('.');
+	if(i>=0) top_loc = loc.substr(0, i)+".top.html";
+	else top_loc = loc+".html";
+	bot_loc = loc;
+
+	document.write("<frameset rows='150,*' noresize>");
+	document.write("<frame src='" + top_loc + "' />");
+	document.write("<frame src='" + bot_loc + "' />");
+
+	document.write("<noframes>");
+	document.write("This tests use frames which are not supported by your browser.");
+	document.write("</noframes>");
+	document.write("</frameset>");
+}
+else
+{
+	document.write("<body>");
+	document.write("Sorry, there is no test for descriptor '" + document.location.search + "'");
+	document.write("</body>");
+}
+</script>
+</head>
+</html>

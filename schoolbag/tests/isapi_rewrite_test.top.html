@@ -1,0 +1,13 @@
+<html>
+<head>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<p>ISAPI Rewrite allows setting rules that will be applied to URLs before they will be passed to IIS service.
+This test redirects accordingly to rule
+<pre>RewriteRule ^(.*)/tests/isapi_rewrite_test\.redirect$ $1/tests/isapi_rewrite_test.html [I,O,R]</pre>
+So, file /tests/isapi_rewrite_test.redirect on your site will be redirected to /tests/isapi_rewrite_test.html.
+If you see the message that claims that ISAPI Rewrite works, this means the rule were applied.
+</p>
+</body>
+</html>

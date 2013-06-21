@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<filemanager>
+
+  <owner name="HOSTING\fm00140631">
+    <accounts>
+      <account name="HOSTING\i00140631">
+        <types>
+          <type>web_anonymous</type>
+        </types>
+      </account>
+      <account name="HOSTING\ex_p00140631">
+        <types>
+          <type>application_pool</type>
+        </types>
+      </account>
+      <account name="HOSTING\w00140631">
+        <types>
+          <type>ftp</type>
+        </types>
+      </account>
+    </accounts>
+  </owner>
+
+</filemanager>

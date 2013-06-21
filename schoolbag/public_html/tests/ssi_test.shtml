@@ -1,0 +1,84 @@
+<html>
+<head>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h3 align="center">This page demonstrates the IIS Server Side Includes abilities</h3>
+
+<div class="listContentArea">
+<table class="listContentLayout" collspan="0" cellspan="0" border="0" width="100%">
+<tr class="listHeaders"><th>Code being executed</th><th>Result of execution</th></tr>
+
+<tr class="oddrow">
+	<td>
+		&lt;!-- #CONFIG TIMEFMT="%m/%d/%y" --&gt;<br/>
+		Today's Date = &lt;!--#ECHO VAR = "DATE_LOCAL" --&gt;
+	</td>
+	<td>
+		<!-- #CONFIG TIMEFMT="%m/%d/%y" -->
+		Today's Date = <!--#ECHO VAR = "DATE_LOCAL" -->
+	</td>
+</tr>
+<tr class="evenrow">
+	<td>
+		&lt;!-- #CONFIG TIMEFMT="%A, %B %d, %Y" --&gt;<br/>
+		Today's Date = &lt;!--#ECHO VAR = "DATE_LOCAL" --&gt;
+	</td>
+	<td>
+		<!-- #CONFIG TIMEFMT="%A, %B %d, %Y" -->
+		Today's Date = <!--#ECHO VAR = "DATE_LOCAL" -->
+	</td>
+</tr>
+<tr class="oddrow">
+	<td>
+		Page URL = &lt;!--#ECHO VAR = "URL" --&gt;
+	</td>
+	<td>
+		Page URL = <!--#ECHO VAR = "URL" -->
+	</td>
+</tr>
+<tr class="evenrow">
+	<td>
+		Root directory of c:\ = &lt;!--#EXEC CMD="cmd /c dir c:\ /b"--&gt;
+	</td>
+	<td>
+		Page URL = <!--#EXEC CMD="cmd /c dir c:\ /b"-->
+	</td>
+</tr>
+<tr class="oddrow">
+	<td>
+		Modification date of ssi_test.top.html = &lt;!--#FLASTMOD FILE="ssi_test.top.html"--&gt;
+	</td>
+	<td>
+		Modification date of ssi_test.top.html = <!--#FLASTMOD FILE="ssi_test.top.html"-->
+	</td>
+</tr>
+<tr class="evenrow">
+	<td>
+		&lt;!-- #CONFIG SIZEFMT="BYTES" --&gt;<br>
+		Size of ssi_test.top.html = &lt;!--#FSIZE FILE="ssi_test.top.html"--&gt; byte(s)
+	</td>
+	<td>
+		<!-- #CONFIG SIZEFMT="BYTES" -->
+		Size of ssi_test.top.html = <!--#FSIZE FILE="ssi_test.top.html"--> byte(s)
+	</td>
+</tr>
+<tr class="oddrow">
+	<td>
+		Included content of ssi_test.top.html:&lt;hr/&gt;<br>
+		&lt;!--#include file="ssi_test.top.html"--&gt;
+	</td>
+	<td>
+		Included content of ssi_test.top.html:<br/>
+		<!--#include file="ssi_test.top.html"-->
+	</td>
+</tr>
+</table>
+</div>
+
+</td></tr><tr><td>
+<sup>*</sup> ssi_test.top.html is file you can see at top frame.
+
+</td></tr></table>
+</body>
+</html>
